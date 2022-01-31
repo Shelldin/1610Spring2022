@@ -9,6 +9,7 @@
         <e p="Scripts" t="Include">
           <e p="ActiveObjects.cs" t="Include" />
           <e p="AnotherClass.cs" t="Include" />
+          <e p="ButtonInput.cs" t="Include" />
           <e p="CameraLookAt.cs" t="Include" />
           <e p="CheckState.cs" t="Include" />
           <e p="ColorChanger.cs" t="Include" />
@@ -20,6 +21,7 @@
           <e p="ForEachLoop.cs" t="Include" />
           <e p="ForLoops.cs" t="Include" />
           <e p="IfStatements.cs" t="Include" />
+          <e p="KeyInput.cs" t="Include" />
           <e p="ScopeAndAccessModifiers.cs" t="Include" />
           <e p="SyntaxBasics.cs" t="Include" />
           <e p="TransformFunctions.cs" t="Include" />

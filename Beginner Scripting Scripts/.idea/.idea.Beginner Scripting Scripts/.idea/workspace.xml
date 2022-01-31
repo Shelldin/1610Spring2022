@@ -32,9 +32,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UpdateAndFixedUpdate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TransformFunctions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IfStatements.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestroyComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ForEachLoop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLookAt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnableComponents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeyInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ForLoops.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScopeAndAccessModifiers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnotherClass.cs" root0="FORCE_HIGHLIGHTING" />
@@ -45,6 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CheckState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SyntaxBasics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoWhileLoop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestroyOther.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -66,6 +69,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TransformFunctions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLookAt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DestroyBasic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOther.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/KeyInput.cs" />
       </list>
     </option>
   </component>
@@ -109,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643590105732</updated>
-      <workItem from="1643590127203" duration="5882000" />
+      <workItem from="1643590127203" duration="6268000" />
     </task>
     <servers />
   </component>
