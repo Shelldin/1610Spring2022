@@ -33,9 +33,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ForLoops.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScopeAndAccessModifiers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnotherClass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VariablesAndFunctions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WhileLoop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IfStatements.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ForEachLoop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SyntaxBasics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoWhileLoop.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,6 +50,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/VariablesAndFunctions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SyntaxBasics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IfStatements.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ForLoops.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WhileLoop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DoWhileLoop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ForEachLoop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScopeAndAccessModifiers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnotherClass.cs" />
       </list>
     </option>
   </component>
@@ -87,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643590105732</updated>
-      <workItem from="1643590127203" duration="1566000" />
+      <workItem from="1643590127203" duration="3975000" />
     </task>
     <servers />
   </component>
