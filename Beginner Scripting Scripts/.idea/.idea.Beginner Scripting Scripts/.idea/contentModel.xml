@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="ColorChanger.cs" t="Include" />
+          <e p="IfStatements.cs" t="Include" />
           <e p="SyntaxBasics.cs" t="Include" />
           <e p="VariablesAndFunctions.cs" t="Include" />
         </e>
