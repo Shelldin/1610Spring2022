@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b85077d6-a0d1-44c8-85c5-9a5fc9927900" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Beginner Scripting Scripts/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beginner Scripting Scripts/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Beginner Scripting Scripts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Beginner Scripting Scripts/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ForEachLoop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SyntaxBasics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoWhileLoop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnableComponents.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -57,6 +56,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ForEachLoop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnotherClass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScopeAndAccessModifiers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpdateAndFixedUpdate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnableComponents.cs" />
       </list>
     </option>
   </component>
@@ -100,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643590105732</updated>
-      <workItem from="1643590127203" duration="4327000" />
+      <workItem from="1643590127203" duration="4825000" />
     </task>
     <servers />
   </component>

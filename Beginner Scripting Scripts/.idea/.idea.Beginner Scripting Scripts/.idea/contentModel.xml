@@ -10,6 +10,7 @@
           <e p="AnotherClass.cs" t="Include" />
           <e p="ColorChanger.cs" t="Include" />
           <e p="DoWhileLoop.cs" t="Include" />
+          <e p="EnableComponents.cs" t="Include" />
           <e p="ForEachLoop.cs" t="Include" />
           <e p="ForLoops.cs" t="Include" />
           <e p="IfStatements.cs" t="Include" />
