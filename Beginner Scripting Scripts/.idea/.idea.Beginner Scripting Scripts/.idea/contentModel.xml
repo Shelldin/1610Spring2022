@@ -18,6 +18,7 @@
           <e p="IfStatements.cs" t="Include" />
           <e p="ScopeAndAccessModifiers.cs" t="Include" />
           <e p="SyntaxBasics.cs" t="Include" />
+          <e p="TransformFunctions.cs" t="Include" />
           <e p="UpdateAndFixedUpdate.cs" t="Include" />
           <e p="VariablesAndFunctions.cs" t="Include" />
           <e p="WhileLoop.cs" t="Include" />
