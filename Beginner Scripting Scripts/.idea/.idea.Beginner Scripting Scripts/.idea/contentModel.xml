@@ -12,6 +12,9 @@
           <e p="CameraLookAt.cs" t="Include" />
           <e p="CheckState.cs" t="Include" />
           <e p="ColorChanger.cs" t="Include" />
+          <e p="DestroyBasic.cs" t="Include" />
+          <e p="DestroyComponent.cs" t="Include" />
+          <e p="DestroyOther.cs" t="Include" />
           <e p="DoWhileLoop.cs" t="Include" />
           <e p="EnableComponents.cs" t="Include" />
           <e p="ForEachLoop.cs" t="Include" />
