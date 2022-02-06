@@ -1,0 +1,256 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.9f1 (921b45a28ab6) revision 9575237'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 16218 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/sheld/Documents/CodingStuff/1610Spring2022/Metroidvania Tutorial
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59004
+Successfully changed project path to: C:/Users/sheld/Documents/CodingStuff/1610Spring2022/Metroidvania Tutorial
+C:/Users/sheld/Documents/CodingStuff/1610Spring2022/Metroidvania Tutorial
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 88.79 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.9f1 (921b45a28ab6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/sheld/Documents/CodingStuff/1610Spring2022/Metroidvania Tutorial/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     8109 MB
+    Driver:   27.20.100.9624
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003046 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 84.55 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.625 seconds
+Domain Reload Profiling:
+	ReloadAssembly (626ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (489ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (99ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (300ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (85ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (147ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006194 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Metroidvania Tutorial\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Metroidvania Tutorial\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 86.95 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.550 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1551ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1373ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (232ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (968ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (87ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (746ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3907 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (225.6 KB). Loaded Objects now: 4356.
+Memory consumption went from 146.8 MB to 146.6 MB.
+Total: 5.106600 ms (FindLiveObjects: 0.489100 ms CreateObjectMapping: 0.397100 ms MarkObjects: 4.031400 ms  DeleteObjects: 0.187600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 236572.046247 seconds.
+  path: Assets/Scenes/Test.unity
+  artifactKey: Guid(33e320917579584458a7105bac8444da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test.unity using Guid(33e320917579584458a7105bac8444da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c63f2d2507b6fe62a06e2129d465e89c') in 0.019876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 198.683989 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art
+  artifactKey: Guid(2eb0208e6b145cd40b8fbc17cf0578a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art using Guid(2eb0208e6b145cd40b8fbc17cf0578a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '081fb226cfa8afdb6cb78fe617e849aa') in 0.011681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.056106 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Bomb.png
+  artifactKey: Guid(d53ed6ebb0b51fd4fa0911f86d46e2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Bomb.png using Guid(d53ed6ebb0b51fd4fa0911f86d46e2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379215a4b13e1155ae50ee87dbb4bd87') in 0.198882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/MetroExtras.png
+  artifactKey: Guid(a8e78cc783a43f24fa68e56c7426ed72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/MetroExtras.png using Guid(a8e78cc783a43f24fa68e56c7426ed72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc85d2b3ae7edbf7d0f078bf1a2b82a0') in 0.024798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.467466 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz
+  artifactKey: Guid(b1911707ca0bea240b3f97ef03865a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz using Guid(b1911707ca0bea240b3f97ef03865a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46e5be52ed7a28a142a8e473e61fa60') in 0.010104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.440885 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped
+  artifactKey: Guid(3130db569d7754d479a5c80d10c6af17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped using Guid(3130db569d7754d479a5c80d10c6af17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c096585551c45dc6e0c37dd9f1ce75e2') in 0.011947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.994027 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/environment
+  artifactKey: Guid(8f6a0744340d7154bad8d0324dedb10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/environment using Guid(8f6a0744340d7154bad8d0324dedb10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd97bd006b39a9f3464a4f1d94f96aa83') in 0.010366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.053586 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/environment/environment-preview.png
+  artifactKey: Guid(caf172139417dff4bb041cfb4cc5e449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/environment/environment-preview.png using Guid(caf172139417dff4bb041cfb4cc5e449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64eebe8fc2ca55e5bb699e2882a883dd') in 0.056388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.914912 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/environment/layers
+  artifactKey: Guid(73a1e69f5ff5d6e4e947b3b3fb8d90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/environment/layers using Guid(73a1e69f5ff5d6e4e947b3b3fb8d90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70134144963b174c2cc0cd34e1a78ce2') in 0.009252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.068666 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/environment/layers/background.png
+  artifactKey: Guid(1e0c7f5e74c2cbe449b9017b7a6987cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/environment/layers/background.png using Guid(1e0c7f5e74c2cbe449b9017b7a6987cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '424f0659d7548a286733c2b109cbdfa7') in 0.028392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/environment/layers/tilesets.png
+  artifactKey: Guid(8402c9d98d0976842b219430b7925690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/environment/layers/tilesets.png using Guid(8402c9d98d0976842b219430b7925690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e858f554fcd5ea9fa0a5140f0d592e23') in 0.341826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1021.863608 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets
+  artifactKey: Guid(f35cb7777a4d7a445ab502ba5912f284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets using Guid(f35cb7777a4d7a445ab502ba5912f284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13aa8c4e352646dfceb04e4953e14e6c') in 0.010045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.812627 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player
+  artifactKey: Guid(8f4583703ea368c4381157c31f755979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player using Guid(8f4583703ea368c4381157c31f755979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba79a2f589551fa28d162663593007c') in 0.008858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.065524 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player/player-ball.png
+  artifactKey: Guid(09f3889801899e7438334d6231bec1e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player/player-ball.png using Guid(09f3889801899e7438334d6231bec1e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b62fcdebb59dc68bb6a85f5a28555a5') in 0.032001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player/player-stand.png
+  artifactKey: Guid(b6cbda95cd03a02438614c563174d494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player/player-stand.png using Guid(b6cbda95cd03a02438614c563174d494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc05d5ef482b2f0871df3e0ce2c6a99') in 0.034547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player/player-shoot-up.png
+  artifactKey: Guid(1c58685f60568244a949c780dbc2f5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Warped/spritesheets/player/player-shoot-up.png using Guid(1c58685f60568244a949c780dbc2f5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b76feacdcf9985656a91b1cebcd5ece') in 0.023239 seconds 
