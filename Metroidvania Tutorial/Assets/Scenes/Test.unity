@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 22009521}
   - component: {fileID: 22009520}
   - component: {fileID: 22009522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StandingSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400502241}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2000,7 +2000,7 @@ GameObject:
   - component: {fileID: 1131999180}
   - component: {fileID: 1131999179}
   - component: {fileID: 1131999178}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2040,7 +2040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f29ebf013c9094997224664ed47541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 10
+  bulletSpeed: 5
   bulletRB: {fileID: 1131999178}
   moveDir: {x: 1, y: 0}
 --- !u!58 &1131999180
@@ -2139,7 +2139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131999177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8241813, y: -4.3525696, z: 0}
+  m_LocalPosition: {x: 1.4, y: -4.3525696, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2202,7 +2202,7 @@ GameObject:
   - component: {fileID: 1496543921}
   - component: {fileID: 1496543920}
   - component: {fileID: 1496543922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2277,7 +2277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2030584745}
   - component: {fileID: 2030584744}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CameraBounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}

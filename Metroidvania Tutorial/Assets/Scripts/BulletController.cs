@@ -16,7 +16,7 @@ public class BulletController : MonoBehaviour
         bulletRB.velocity = moveDir * bulletSpeed;
     }
 
-    private void OnTriggerEnter2D(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(gameObject);
     }
