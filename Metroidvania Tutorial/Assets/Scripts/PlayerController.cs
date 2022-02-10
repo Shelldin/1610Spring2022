@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour
                 {
                         Instantiate(shotToFire, shotPoint.position, shotPoint.rotation)
                                 .moveDir = new Vector2(transform.localScale.x, 0);
+                        
+                        anim.SetTrigger("shotFired");
                 }
                 
                 
