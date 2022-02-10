@@ -15,6 +15,8 @@ public class CameraController : MonoBehaviour
     {
         player = FindObjectOfType<PlayerController>();
 
+        /*determining dimensions for proper bounding box functionality
+         (without these camera will go further than intended)*/
         halfHeight = Camera.main.orthographicSize;
         halfWidth = halfHeight * Camera.main.aspect;
     }

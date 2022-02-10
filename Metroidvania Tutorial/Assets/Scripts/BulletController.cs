@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class BulletController : MonoBehaviour
@@ -10,13 +11,27 @@ public class BulletController : MonoBehaviour
 
     public Vector2 moveDir;
 
+    public GameObject impactEffect;
+
     private void Update()
     {
         //determine direction and speed of bullet
         bulletRB.velocity = moveDir * bulletSpeed;
     }
 
+    //destroy bullet when it collides with another Collider2D
     private void OnTriggerEnter2D(Collider2D other)
+    {
+        //particle effect on impact
+        if (impactEffect != null)
+        {
+            Instantiate(impactEffect, transform.position, Quaternion.identity);
+        }
+        Destroy(gameObject);
+    }
+
+    //destroy bullet when not viewable by any camera
+    private void OnBecameInvisible()
     {
         Destroy(gameObject);
     }

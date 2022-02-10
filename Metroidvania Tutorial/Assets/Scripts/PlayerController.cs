@@ -15,7 +15,10 @@ public class PlayerController : MonoBehaviour
         private bool isOnGround;
 
         public Animator anim;
-        
+
+
+        public BulletController shotToFire;
+        public Transform shotPoint;
 
         private void Update()
         {
@@ -40,9 +43,14 @@ public class PlayerController : MonoBehaviour
                 {
                         playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
                 }
-                
-                
-                
+
+
+                //firing bullet prefab from player and determining direction of bullet
+                if (Input.GetButtonDown("Fire1"))
+                {
+                        Instantiate(shotToFire, shotPoint.position, shotPoint.rotation)
+                                .moveDir = new Vector2(transform.localScale.x, 0);
+                }
                 
                 
                 anim.SetBool("isOnGround", isOnGround);
