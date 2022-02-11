@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
 
         public BulletController shotToFire;
         public Transform shotPoint;
+        
+        private bool canDoubleJump;
 
         private void Update()
         {
@@ -39,8 +41,18 @@ public class PlayerController : MonoBehaviour
                 isOnGround = Physics2D.OverlapCircle(groundPoint.position, .2f, groundLayers);
 
                 //Jumping
-                if (Input.GetButtonDown("Jump") && isOnGround)
+                if (Input.GetButtonDown("Jump") && (isOnGround || canDoubleJump))
                 {
+                        if (isOnGround)
+                        { 
+                                canDoubleJump = true; 
+                        }
+                        else
+                        {
+                                canDoubleJump = false;
+                        }
+                                
+                        
                         playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
                 }
 
