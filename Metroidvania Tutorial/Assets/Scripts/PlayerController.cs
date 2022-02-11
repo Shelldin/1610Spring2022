@@ -7,22 +7,29 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
         public Rigidbody2D playerRB;
-
+        
+        //general movement variables
         public float moveSpeed;
+        
+        //Jump Variables
         public float jumpForce;
-
+        
         public Transform groundPoint;
         public LayerMask groundLayers;
         private bool isOnGround;
-
+        
+        
+        //general animation variables
         public Animator anim;
 
-
+        //Shooting Variables
         public BulletController shotToFire;
         public Transform shotPoint;
         
+        //Double Jump Variables
         private bool canDoubleJump;
-
+        
+        //dashing variables
         public float dashSpeed,
                 dashTime;
         private float dashCounter;
@@ -30,13 +37,22 @@ public class PlayerController : MonoBehaviour
         public float waitAfterDashing;
         private float dashRechargeCounter;
 
+        //after image effect variables
         public SpriteRenderer playerSR,
                 afterImage;
-
+        
         public float afterImageLifeTime,
                 timeBetweenAfterImages;
         private float afterImageCounter;
         public Color afterImageColor;
+        
+        //morph ball variables
+        public GameObject standing,
+                ball;
+
+        public float waitToBall;
+        private float ballCounter;
+        
 
 
         private void Update()
@@ -51,7 +67,7 @@ public class PlayerController : MonoBehaviour
                 {
 
                         //checks if player is dashing
-                        if (Input.GetButtonDown("Fire2"))
+                        if (Input.GetButtonDown("Fire2") && standing.activeSelf)
                         {
                                 dashCounter = dashTime;
 
@@ -131,6 +147,44 @@ public class PlayerController : MonoBehaviour
                                 .moveDir = new Vector2(transform.localScale.x, 0);
                         
                         anim.SetTrigger("shotFired");
+                }
+                
+                //morph ball
+                if (!ball.activeSelf)
+                {
+                        //swap from standing to morph ball
+                        if (Input.GetAxisRaw("Vertical")< -.9f)
+                        {
+                                ballCounter -= Time.deltaTime;
+                                if (ballCounter <= 0)
+                                {
+                                     ball.SetActive(true);
+                                     standing.SetActive(false);
+                                }
+                        }
+                        //resetting waitToBall when not switching from one mode to the other
+                        else
+                        {
+                                ballCounter = waitToBall;
+                        }
+                }
+                else
+                {
+                        //swap from morph ball to standing
+                        if (Input.GetAxisRaw("Vertical")> .9f)
+                        {
+                                ballCounter -= Time.deltaTime;
+                                if (ballCounter <= 0)
+                                {
+                                        ball.SetActive(false);
+                                        standing.SetActive(true);
+                                }
+                        }
+                        //resetting waitToBall when not switching from one mode to the other
+                        else
+                        {
+                                ballCounter = waitToBall;
+                        } 
                 }
                 
                 
