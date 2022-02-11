@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
                 dashTime;
         private float dashCounter;
 
+        public float waitAfterDashing;
+        private float dashRechargeCounter;
+
         public SpriteRenderer playerSR,
                 afterImage;
 
@@ -38,15 +41,26 @@ public class PlayerController : MonoBehaviour
 
         private void Update()
         {
-                //checks if player is dashing
-                if (Input.GetButtonDown("Fire2"))
+                // Player must wait a short time between dashing to dash again
+                if (dashRechargeCounter > 0)
                 {
-                        dashCounter = dashTime;
-                        
-                        ShowAfterImage();
+                        dashRechargeCounter -= Time.deltaTime;
                 }
-                
-                
+
+                else
+                {
+
+                        //checks if player is dashing
+                        if (Input.GetButtonDown("Fire2"))
+                        {
+                                dashCounter = dashTime;
+
+                                ShowAfterImage();
+                        }
+
+                }
+
+
                 //dash movement
                 if (dashCounter > 0)
                 {
@@ -60,6 +74,10 @@ public class PlayerController : MonoBehaviour
                         {
                                 ShowAfterImage();
                         }
+                        
+                        
+                        //reset dashRechargeCounter while player is in a dash
+                        dashRechargeCounter = waitAfterDashing;
                 }
                 //if player is not dashing they can move
                 //(player does not have horizontal movement control during a dash)
@@ -81,6 +99,7 @@ public class PlayerController : MonoBehaviour
                         }
 
                 }
+                
 
                 //checking if player is on ground or not
                 isOnGround = Physics2D.OverlapCircle(groundPoint.position, .2f, groundLayers);

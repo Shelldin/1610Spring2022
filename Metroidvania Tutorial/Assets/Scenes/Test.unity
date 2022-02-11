@@ -2143,9 +2143,10 @@ MonoBehaviour:
   shotPoint: {fileID: 672301512}
   dashSpeed: 25
   dashTime: 0.2
+  waitAfterDashing: 0.25
   playerSR: {fileID: 22009521}
   afterImage: {fileID: 575393398263081305, guid: 6078c0eb5d99f5f4498f089d01b355e2, type: 3}
-  afterImageLifeTime: 0.5
+  afterImageLifeTime: 0.15
   timeBetweenAfterImages: 0.033333335
   afterImageColor: {r: 0.7672063, g: 0.99215686, b: 0.3411765, a: 0.68235296}
 --- !u!1 &2030584743
