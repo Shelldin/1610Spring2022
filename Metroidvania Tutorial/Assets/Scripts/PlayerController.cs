@@ -52,6 +52,11 @@ public class PlayerController : MonoBehaviour
 
         public float waitToBall;
         private float ballCounter;
+        public Animator ballAnim;
+        
+        //bomb variables
+        public Transform bombPoint;
+        public GameObject bomb;
         
 
 
@@ -140,13 +145,23 @@ public class PlayerController : MonoBehaviour
                 }
 
 
-                //firing bullet prefab from player and determining direction of bullet
+                //shooting and dropping bombs
                 if (Input.GetButtonDown("Fire1"))
                 {
-                        Instantiate(shotToFire, shotPoint.position, shotPoint.rotation)
-                                .moveDir = new Vector2(transform.localScale.x, 0);
+                        //fire bullets if standing
+                        if (standing.activeSelf)
+                        {
+                                Instantiate(shotToFire, shotPoint.position, shotPoint.rotation)
+                                        .moveDir = new Vector2(transform.localScale.x, 0);
                         
-                        anim.SetTrigger("shotFired");
+                                anim.SetTrigger("shotFired");    
+                        }
+                        //drop bombs if in morph ball
+                        else if(ball.activeSelf)
+                        {
+                                Instantiate(bomb, bombPoint.position, bombPoint.rotation);
+                        }
+                        
                 }
                 
                 //morph ball
@@ -187,9 +202,19 @@ public class PlayerController : MonoBehaviour
                         } 
                 }
                 
+                //standing animations
+                if (standing.activeSelf)
+                {
+                        anim.SetBool("isOnGround", isOnGround);
+                        anim.SetFloat("speed", Mathf.Abs(playerRB.velocity.x));
+                }
                 
-                anim.SetBool("isOnGround", isOnGround);
-                anim.SetFloat("speed", Mathf.Abs(playerRB.velocity.x));
+                //ball animations
+                if (ball.activeSelf)
+                {
+                        ballAnim.SetFloat("speed", Mathf.Abs(playerRB.velocity.x));
+                }
+                
         }
 
         //function to create after images when dashing
