@@ -2859,6 +2859,7 @@ GameObject:
   - component: {fileID: 1496543921}
   - component: {fileID: 1496543920}
   - component: {fileID: 1496543922}
+  - component: {fileID: 1496543923}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -2943,6 +2944,22 @@ MonoBehaviour:
   ballAnim: {fileID: 51835415}
   bombPoint: {fileID: 2036882527}
   bomb: {fileID: 5461993422550756101, guid: 3d612d5c8b9755846abbdfa0dedc129f, type: 3}
+--- !u!114 &1496543923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496543919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1d78aee603f5c848bbcf31a97aed6f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDoubleJump: 0
+  canDash: 0
+  canBecomeBall: 0
+  canDropBomb: 0
 --- !u!4 &1525728125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8590736437746310281, guid: 42305e25d4d57a64282290d5a0488743, type: 3}
