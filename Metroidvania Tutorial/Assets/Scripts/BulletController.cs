@@ -13,6 +13,8 @@ public class BulletController : MonoBehaviour
 
     public GameObject impactEffect;
 
+    public int damageAmount = 1;
+
     private void Update()
     {
         //determine direction and speed of bullet
@@ -22,6 +24,12 @@ public class BulletController : MonoBehaviour
     //destroy bullet when it collides with another Collider2D
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //check if collider is an enemy and damages enemy if true
+        if (other.CompareTag("Enemy"))
+        {
+            other.GetComponent<EnemyHealthController>().DamageEnemy(damageAmount);
+        }
+        
         //particle effect on impact
         if (impactEffect != null)
         {
