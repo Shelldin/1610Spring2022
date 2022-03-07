@@ -15,6 +15,9 @@ public class EnemyFlyingController : MonoBehaviour
 
     //target to chase
     private Transform player;
+    
+    //animation
+    public Animator anim;
 
     private void Start()
     {
@@ -32,6 +35,8 @@ public class EnemyFlyingController : MonoBehaviour
             if (Vector3.Distance(transform.position, player.position) < rangeToStartChase)
             {
                 isChasing = true;
+                
+                anim.SetBool("isChasing", isChasing);
             }
         }
         //when isChasing is true, begin chasing movement
@@ -45,6 +50,9 @@ public class EnemyFlyingController : MonoBehaviour
                 Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
                 
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, turnSpeed*Time.deltaTime);
+
+                //move flying enemy based on direction it's facing
+                transform.position += -transform.right * moveSpeed * Time.deltaTime;
             }
         }
     }
