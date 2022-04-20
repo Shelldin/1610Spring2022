@@ -6095,7 +6095,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 984492550}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c71518d6958294f4ab4af4cefd082355, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -6725,6 +6725,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 10
+  iFrameLength: 1.5
+  flashLength: 0.1
+  playerSprites:
+  - {fileID: 22009521}
+  - {fileID: 51835413}
 --- !u!4 &1525728125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8590736437746310281, guid: 42305e25d4d57a64282290d5a0488743, type: 3}

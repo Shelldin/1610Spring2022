@@ -32,7 +32,8 @@ public class DamagePlayer : MonoBehaviour
     private void DealDamage()
     {
         PlayerHealthController.instance.DamagePlayer(damageAmount);
-
+        
+        //if destoryOnDamage is true, enemy will destroy itself when it deals damage with an effect
         if (destroyOnDamage)
         {
             if (destroyEffect != null)
