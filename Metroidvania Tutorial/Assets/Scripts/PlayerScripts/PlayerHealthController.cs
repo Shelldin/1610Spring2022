@@ -20,6 +20,9 @@ public class PlayerHealthController : MonoBehaviour
     {
         //set health to full on start
         currentHealth = maxHealth;
+        
+        //set health slider values
+        UIController.instance.UpdateHealth(currentHealth, maxHealth);
     }
 
     //deals damage to player
@@ -33,5 +36,7 @@ public class PlayerHealthController : MonoBehaviour
             currentHealth = 0;
             gameObject.SetActive(false);
         }
+        
+        UIController.instance.UpdateHealth(currentHealth, maxHealth);
     }
 }
