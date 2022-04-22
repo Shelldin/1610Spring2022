@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 300}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
-  controlID: 2339
+  controlID: 152
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
       y: 21
       width: 697.5
       height: 272.5
-    m_Scale: {x: 0.5046296, y: 0.5046296}
+    m_Scale: {x: 0.54351854, y: 0.54351854}
     m_Translation: {x: 348.75, y: 136.25}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -104,12 +104,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -691.10095
-      y: -270
-      width: 1382.2019
-      height: 540
+      x: -641.65247
+      y: -250.68143
+      width: 1283.3049
+      height: 501.36285
     m_MinimalGUI: 1
-  m_defaultScale: 0.5046296
+  m_defaultScale: 0.54351854
   m_LastWindowPixelSize: {x: 1395, y: 587}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 300}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 1
-  controlID: 2340
+  controlID: 153
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 2341
+  controlID: 154
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 2342
+  controlID: 128
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -306,7 +306,7 @@ MonoBehaviour:
       containerId: overlay-toolbar__top
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -466,9 +466,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 269.8485, y: 5.3009596, z: 0.59814054}
+    m_Target: {x: 1030.8021, y: 629.2354, z: -1.9014199}
     speed: 2
-    m_Value: {x: 269.8485, y: 5.3009596, z: 0.59814054}
+    m_Value: {x: 1032.5662, y: 636.79535, z: -2.0610175}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -519,9 +519,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.913671
+    m_Target: 338.70392
     speed: 2
-    m_Value: 4.913671
+    m_Value: 354.6638
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -803,7 +803,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 20806
+  m_LastSelectedObjectID: -1756
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -828,7 +828,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 2262
+  controlID: 155
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -848,8 +848,8 @@ MonoBehaviour:
     y: 0
     width: 375
     height: 351.5
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -885,10 +885,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 26.5}
-      m_SelectedIDs: 24f9ffff
-      m_LastClickedID: -1756
-      m_ExpandedIDs: def0ffffa2f3ffff5cf8ffff68f8ffff24f9ffff2afbffff46510000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 0cecffff
+      m_LastClickedID: -5108
+      m_ExpandedIDs: 0cecffffa4f6ffffc8f8ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -979,23 +979,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/BossScripts
+    - Assets/_Udemy Metroidvania Assets/Font
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/Scripts/BossScripts
+  - Assets/_Udemy Metroidvania Assets/Font
   m_LastFoldersGridSize: 60
   m_LastProjectPath: C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Metroidvania
     Tutorial
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 258}
-    m_SelectedIDs: d4560000
-    m_LastClickedID: 22228
-    m_ExpandedIDs: 000000007e56000080560000825600008456000086560000885600008a5600008c5600008e56000090560000925600009456000000ca9a3b
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: 34570000
+    m_LastClickedID: 22324
+    m_ExpandedIDs: 00000000f0560000f2560000f4560000f8560000fa560000fc560000fe5600000057000002570000045700000657000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1023,7 +1023,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007e56000080560000825600008456000086560000885600008a5600008c5600008e56000090560000925600009456000000ca9a3b
+    m_ExpandedIDs: 00000000f0560000f2560000f4560000f6560000f8560000fa560000fc560000fe56000000570000025700000457000006570000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1048,9 +1048,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 24f9ffff
-    m_LastClickedInstanceID: -1756
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 0cecffff
+    m_LastClickedInstanceID: -5108
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: b05e00009a600000e26000007e5e0000fa610000c45400004c510000d05400000c5e000018550000225b0000da5d00007a6000006e540000f4540000005500000a550000ee550000f85500008e520000b25e000000000000905a0000e05600004a5600004e56000052560000685300005c5600006a5600009e560000c056000070530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
