@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1714425609180833646}
   - component: {fileID: 1714425609180833681}
-  - component: {fileID: 1714425609180833680}
   - component: {fileID: 1714425609180833683}
   m_Layer: 0
   m_Name: Sprite
@@ -86,32 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1714425609180833680
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1714425609180833682}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.48742676, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 3}
-    newSize: {x: 3, y: 3}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.0251465, y: 3}
-  m_EdgeRadius: 0
 --- !u!95 &1714425609180833683
 Animator:
   serializedVersion: 4
@@ -142,6 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714425609190979163}
   - component: {fileID: 1714425609190979162}
+  - component: {fileID: 4269111759636648880}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -180,9 +154,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1714425609180833683}
   distanceToOpen: 6
-  exitPoint: {fileID: 0}
-  movePlayerSpeed: 0
+  exitPoint: {fileID: 1714425609961098749}
+  movePlayerSpeed: 10
   levelToLoad: Test
+--- !u!61 &4269111759636648880
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714425609190979165}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.49824524, y: -0.008167982}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9964905, y: 2.9766521}
+  m_EdgeRadius: 0
 --- !u!1 &1714425609417538194
 GameObject:
   m_ObjectHideFlags: 0
