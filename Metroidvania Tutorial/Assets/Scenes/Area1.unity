@@ -138,6 +138,10 @@ PrefabInstance:
       propertyPath: levelToLoad
       value: Area2
       objectReference: {fileID: 0}
+    - target: {fileID: 1714425609190979162, guid: 3fbaccb55196f9d4682895646d182175, type: 3}
+      propertyPath: movePlayerSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1714425609190979163, guid: 3fbaccb55196f9d4682895646d182175, type: 3}
       propertyPath: m_LocalPosition.x
       value: -250
@@ -249,7 +253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306628412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.875416, y: 4.4740505, z: -0.071822666}
+  m_LocalPosition: {x: -11.875416, y: 7.8, z: -0.071822666}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
