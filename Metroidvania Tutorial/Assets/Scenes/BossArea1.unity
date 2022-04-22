@@ -205,6 +205,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPosition: {fileID: 1682088038}
   camSpeed: 5
+  phase2Int: 25
+  phase3Int: 10
+  acitveTime: 5
+  fadeOutTime: 0.5
+  inactiveTime: 1
+  spawnPoints:
+  - {fileID: 1955536418}
+  - {fileID: 1409558707}
+  - {fileID: 767206057}
+  - {fileID: 132126352}
+  - {fileID: 1024698133}
+  - {fileID: 2118185206}
+  moveSpeed: 5
+  anim: {fileID: 466206053}
+  boss: {fileID: 466206050}
 --- !u!114 &235030230
 MonoBehaviour:
   m_ObjectHideFlags: 0
