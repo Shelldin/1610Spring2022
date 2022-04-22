@@ -12,7 +12,7 @@ public class HealthPickup : MonoBehaviour
     //heals the player when player gets the health pickup
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "Player")
+        if (col.CompareTag("Player"))
         {
             PlayerHealthController.instance.HealPlayer(healAmount);
 

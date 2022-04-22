@@ -29,6 +29,11 @@ public class BulletController : MonoBehaviour
         {
             other.GetComponent<EnemyHealthController>().DamageEnemy(damageAmount);
         }
+
+        if (other.CompareTag("Boss"))
+        {
+            BossHealthContoller.instance.TakeDamage(damageAmount);
+        }
         
         //particle effect on impact
         if (impactEffect != null)
