@@ -81,6 +81,61 @@ public class BossBattle : MonoBehaviour
                 }
             }
         }
+        //phase 2 behavior
+        else
+        {
+            if (targetPoint == null)
+            {
+                targetPoint = boss;
+                fadeCounter = fadeOutTime;
+                anim.SetTrigger("vanish");
+            }
+            else
+            {
+                if (Vector3.Distance(boss.position, targetPoint.position) > .02f)
+                {
+                    boss.position =
+                        Vector3.MoveTowards(boss.position, targetPoint.position, moveSpeed * Time.deltaTime);
+                    
+                    if (Vector3.Distance(boss.position, targetPoint.position) <= .02f)
+                    {
+                        fadeCounter = fadeOutTime;
+                        anim.SetTrigger("vanish");
+                    }
+                }
+                else if(fadeCounter > 0)
+                {
+                    fadeCounter -= Time.deltaTime;
+                    if (fadeCounter <= 0)
+                    {
+                        boss.gameObject.SetActive(false);
+
+                        inactiveCounter = inactiveTime;
+                    }
+                }
+                else if (inactiveCounter>0)
+                {
+                    inactiveCounter -= Time.deltaTime;
+                    if (inactiveCounter <= 0)
+                    {
+                        boss.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
+
+                        targetPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+
+                        int whileBreaker = 0;
+                        while (targetPoint.position == boss.position && whileBreaker < 100)
+                        {
+                            targetPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+
+                            whileBreaker++;
+                        }
+                        
+                        boss.gameObject.SetActive(true);
+                        
+                    }
+                }
+            }
+        }
     }
 
     public void EndBattle()
