@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BossBattle : MonoBehaviour
 {
@@ -28,6 +30,13 @@ public class BossBattle : MonoBehaviour
     public Animator anim;
 
     public Transform boss;
+
+    public float slowTimeBetweenShots, 
+        fastTimeBetweenShots;
+
+    private float shotCounter;
+    public GameObject bullet;
+    public Transform shotPoint;
     
     
     // Start is called before the first frame update
@@ -39,6 +48,8 @@ public class BossBattle : MonoBehaviour
         cam.enabled = false;
 
         activeCounter = acitveTime;
+
+        shotCounter = slowTimeBetweenShots;
     }
 
     // Update is called once per frame
@@ -57,6 +68,14 @@ public class BossBattle : MonoBehaviour
                 {
                     fadeCounter = fadeOutTime;
                     anim.SetTrigger("vanish");
+                }
+                
+                shotCounter -= Time.deltaTime;
+                if (shotCounter <= 0)
+                {
+                    shotCounter = slowTimeBetweenShots;
+
+                    Instantiate(bullet, shotPoint.position, Quaternion.identity);
                 }
             }
             else if(fadeCounter > 0)
@@ -78,6 +97,8 @@ public class BossBattle : MonoBehaviour
                     boss.gameObject.SetActive(true);
 
                     activeCounter = acitveTime;
+
+                    shotCounter = slowTimeBetweenShots;
                 }
             }
         }
