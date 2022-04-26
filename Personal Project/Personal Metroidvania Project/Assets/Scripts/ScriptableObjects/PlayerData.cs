@@ -9,5 +9,6 @@ public class PlayerData : ScriptableObject
 
     public float jumpForce;
 
+    [HideInInspector]
     public bool isOnGround;
 }

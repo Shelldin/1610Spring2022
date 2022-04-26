@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
 
     public Transform groundPoint;
     public LayerMask groundLayer;
+
+    public Animator anim;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -22,13 +25,30 @@ public class PlayerController : MonoBehaviour
     {
         //horizontal movement
         playerRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * playerSO.moveSpeed, playerRB.velocity.y);
+        
+        //flip direction based on horizontal input
+        if (Input.GetAxisRaw("Horizontal") < 0)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (Input.GetAxisRaw("Horizontal") > 0)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
 
-        playerSO.isOnGround = Physics2D.OverlapCircle(groundPoint.position, .2f, groundLayer);
+        //checking if on ground
+        playerSO.isOnGround = Physics2D.OverlapCircle(groundPoint.position, .3f, groundLayer);
         
         //jumping
         if (Input.GetButtonDown("Jump") && playerSO.isOnGround)
         {
             playerRB.velocity = new Vector2(playerRB.velocity.x, playerSO.jumpForce);
         }
+        
+        
+        //jump animation
+        anim.SetBool("isOnGround", playerSO.isOnGround);
+        //run animation
+        anim.SetFloat("speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
     }
 }
