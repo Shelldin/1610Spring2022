@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public Transform shotPoint;
 
     private float originalGravity;
+
+    public Transform teleportPoint;
     
     
     // Start is called before the first frame update
@@ -27,38 +29,54 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //horizontal movement
-        playerRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * playerSO.moveSpeed, playerRB.velocity.y);
-        
-        //flip direction based on horizontal input
-        if (Input.GetAxisRaw("Horizontal") < 0)
+        if (Input.GetButtonDown("Fire2"))
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
-        else if (Input.GetAxisRaw("Horizontal") > 0)
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            playerSO.teleCountdown = playerSO.teleDuration;
+            gameObject.transform.position = teleportPoint.position;
         }
 
-        //checking if on ground
-        playerSO.isOnGround = Physics2D.OverlapCircle(groundPoint.position, .3f, groundLayer);
-        
-        //jumping
-        if (Input.GetButtonDown("Jump") && playerSO.isOnGround)
+        /*if (playerSO.teleCountdown > 0 && playerSO.teleportUnlocked)
         {
-            playerRB.velocity = new Vector2(playerRB.velocity.x, playerSO.jumpForce);
-            
-        }
+            playerSO.teleCountdown -= Time.deltaTime;
+            StartCoroutine(TeleportCoroutine(playerSO.teleDuration));
 
-        //check if player has unlocked the hover upgrade
-        if (playerSO.hoverUnlocked)
+        }*/
+        else
         {
-            //hover for a limited time while the jump button is held while already in the air
-            if (Input.GetButtonDown("Jump") && !playerSO.isOnGround && playerSO.canHover)
+            //horizontal movement
+            playerRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * playerSO.moveSpeed, playerRB.velocity.y);
+
+            //flip direction based on horizontal input
+            if (Input.GetAxisRaw("Horizontal") < 0)
             {
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
+            else if (Input.GetAxisRaw("Horizontal") > 0)
+            {
+                transform.localScale = new Vector3(1f, 1f, 1f);
+            }
 
-                StartCoroutine(HoverCoroutine(playerSO.hoverDuration));
 
+            //checking if on ground
+            playerSO.isOnGround = Physics2D.OverlapCircle(groundPoint.position, .3f, groundLayer);
+
+            //jumping
+            if (Input.GetButtonDown("Jump") && playerSO.isOnGround)
+            {
+                playerRB.velocity = new Vector2(playerRB.velocity.x, playerSO.jumpForce);
+
+            }
+
+            //check if player has unlocked the hover upgrade
+            if (playerSO.hoverUnlocked)
+            {
+                //hover for a limited time while the jump button is held while already in the air
+                if (Input.GetButtonDown("Jump") && !playerSO.isOnGround && playerSO.canHover)
+                {
+
+                    StartCoroutine(HoverCoroutine(playerSO.hoverDuration));
+
+                }
             }
         }
 
@@ -94,5 +112,15 @@ public class PlayerController : MonoBehaviour
         //reset gravity when duration ends
         playerRB.gravityScale = originalGravity;
         
+    }
+
+    private IEnumerator TeleportCoroutine(float countdownTime)
+    {
+        anim.SetTrigger("disappear");
+        yield return new WaitForSeconds(1f);
+        playerRB.velocity = new Vector2(playerSO.teleportSpeed * transform.localScale.x, playerRB.velocity.y);
+        yield return new WaitForSeconds(.2f);
+        anim.SetTrigger("appear");
+
     }
 }

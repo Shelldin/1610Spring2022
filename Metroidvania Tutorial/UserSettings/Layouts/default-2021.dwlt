@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1427
     height: 857
   m_ShowMode: 4
-  m_Title: Tile Palette
+  m_Title: Scene
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 350}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1427
     height: 857
-  m_MinSize: {x: 875, y: 350}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 300}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
-  controlID: 322
+  controlID: 76
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 300}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 1
-  controlID: 323
+  controlID: 77
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 324
+  controlID: 78
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 389
+  controlID: 79
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: AnimationWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -241,14 +241,14 @@ MonoBehaviour:
     y: 332
     width: 698.5
     height: 314.5
-  m_MinSize: {x: 201, y: 221}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 16}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 235
+  controlID: 96
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,8 +293,8 @@ MonoBehaviour:
     y: 0
     width: 375
     height: 351.5
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GridPaintPaletteWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -345,14 +345,14 @@ MonoBehaviour:
     y: 0
     width: 353.5
     height: 646.5
-  m_MinSize: {x: 241, y: 221}
+  m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 23}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
   - {fileID: 23}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -438,7 +438,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -451,7 +451,7 @@ MonoBehaviour:
       y: 21
       width: 697.5
       height: 272.5
-    m_Scale: {x: 0.5046296, y: 0.5046296}
+    m_Scale: {x: 0.54351854, y: 0.54351854}
     m_Translation: {x: 348.75, y: 136.25}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -459,12 +459,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -691.10095
-      y: -270
-      width: 1382.2019
-      height: 540
+      x: -641.65247
+      y: -250.68143
+      width: 1283.3049
+      height: 501.36285
     m_MinimalGUI: 1
-  m_defaultScale: 0.5046296
+  m_defaultScale: 0.54351854
   m_LastWindowPixelSize: {x: 1395, y: 587}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -558,7 +558,7 @@ MonoBehaviour:
       containerId: overlay-toolbar__top
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -950,14 +950,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.67814976
+    - e00: 0.7772291
       e01: 0
       e02: 0
-      e03: -40.59913
+      e03: -188.10619
       e10: 0
-      e11: 0.67814976
+      e11: 0.7772291
       e12: 0
-      e13: 69.86529
+      e13: 60.19348
       e20: 0
       e21: 0
       e22: 1
@@ -966,14 +966,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1
+    - e00: 0.7610292
       e01: 0
       e02: 0
-      e03: 0
+      e03: 81.30386
       e10: 0
-      e11: 1
+      e11: 0.7610292
       e12: 0
-      e13: 0
+      e13: 22.053772
       e20: 0
       e21: 0
       e22: 1
@@ -983,9 +983,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 346be0d64cc451142b7e44d05b1f82cc, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: fbe4cb02dec594649876ea88a4bfeb01, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 4465644820489714537, guid: 346be0d64cc451142b7e44d05b1f82cc, type: 2}
+  - m_Target: {fileID: 9086236291763946036, guid: fbe4cb02dec594649876ea88a4bfeb01, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1028,7 +1028,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -5108
+  m_LastSelectedObjectID: 21942
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1060,9 +1060,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5a6b0000
+      m_SelectedIDs: ba540000
       m_LastClickedID: 0
-      m_ExpandedIDs: 1aefffff2afbffff
+      m_ExpandedIDs: 54f9ffff2afbffff88550000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1127,23 +1127,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost
+  - Assets/Scenes
   m_LastFoldersGridSize: 60
   m_LastProjectPath: C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Metroidvania
     Tutorial
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 18570000
-    m_LastClickedID: 22296
-    m_ExpandedIDs: 00000000f0560000f2560000f4560000f6560000f8560000fa560000fc560000fe5600000057000002570000045700000657000000ca9a3b
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: 2e550000
+    m_LastClickedID: 21806
+    m_ExpandedIDs: 00000000ea540000ec540000ee540000f0540000f2540000f4540000f6540000f8540000fa540000fc540000fe54000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1171,7 +1171,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f0560000f2560000f4560000f6560000f8560000fa560000fc560000fe5600000057000002570000045700000657000000ca9a3b
+    m_ExpandedIDs: 00000000ea540000ec540000ee540000f0540000f2540000f4540000f6540000f8540000fa540000fc540000fe54000000550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1223,7 +1223,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 417}
+    m_ScrollPosition: {x: 0, y: 61}
     m_GridSize: 60
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 183
@@ -1288,8 +1288,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -14926.5
-    y: -15970
+    x: 1080
+    y: 78.5
     width: 352.5
     height: 625.5
   m_ViewDataDictionary: {fileID: 0}

@@ -9,14 +9,21 @@ public class PlayerData : ScriptableObject
 
     public float jumpForce;
 
+    public float teleportSpeed;
+
+    public float teleDuration = .2f;
+
+    [HideInInspector] public float teleCountdown;
+
     public ProjectileController activeProjectile;
 
-    //[HideInInspector] 
+    [HideInInspector] 
     public bool isOnGround,
         canHover;
 
     public float hoverDuration;
 
-    public bool hoverUnlocked;
+    public bool hoverUnlocked,
+        teleportUnlocked;
 
 }
