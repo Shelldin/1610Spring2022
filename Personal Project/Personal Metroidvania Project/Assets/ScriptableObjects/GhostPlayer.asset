@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 8
   jumpForce: 20
-  isOnGround: 0
+  activeProjectile: {fileID: 1274879300878104507, guid: d8afe129fc3d4b64d8042c5a4d461dab, type: 3}
+  isOnGround: 1

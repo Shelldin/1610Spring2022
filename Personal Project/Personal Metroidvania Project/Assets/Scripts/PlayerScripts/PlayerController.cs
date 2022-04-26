@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
 
     public Animator anim;
+
+    public Transform shotPoint;
     
     
     // Start is called before the first frame update
@@ -43,6 +45,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && playerSO.isOnGround)
         {
             playerRB.velocity = new Vector2(playerRB.velocity.x, playerSO.jumpForce);
+        }
+
+        //shoot active projectile
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Instantiate(playerSO.activeProjectile, shotPoint.position, shotPoint.rotation).moveDir =
+                new Vector2(transform.localScale.x, 0);
         }
         
         
