@@ -11,4 +11,5 @@ public class PlayerData : ScriptableObject
 
     [HideInInspector]
     public bool isOnGround;
+    
 }
