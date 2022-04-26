@@ -11,7 +11,12 @@ public class PlayerData : ScriptableObject
 
     public ProjectileController activeProjectile;
 
-    [HideInInspector]
-    public bool isOnGround;
-    
+    //[HideInInspector] 
+    public bool isOnGround,
+        canHover;
+
+    public float hoverDuration;
+
+    public bool hoverUnlocked;
+
 }

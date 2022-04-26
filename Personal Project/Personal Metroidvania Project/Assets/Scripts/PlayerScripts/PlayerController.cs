@@ -14,12 +14,14 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
 
     public Transform shotPoint;
+
+    private float originalGravity;
     
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        originalGravity = playerRB.gravityScale;
     }
 
     // Update is called once per frame
@@ -45,6 +47,25 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && playerSO.isOnGround)
         {
             playerRB.velocity = new Vector2(playerRB.velocity.x, playerSO.jumpForce);
+            
+        }
+
+        //check if player has unlocked the hover upgrade
+        if (playerSO.hoverUnlocked)
+        {
+            //hover for a limited time while the jump button is held while already in the air
+            if (Input.GetButtonDown("Jump") && !playerSO.isOnGround && playerSO.canHover)
+            {
+
+                StartCoroutine(HoverCoroutine(playerSO.hoverDuration));
+
+            }
+        }
+
+        //resetting hover when grounded
+        if (playerSO.isOnGround)
+        {
+            playerSO.canHover = true;
         }
 
         //shoot active projectile
@@ -59,5 +80,19 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isOnGround", playerSO.isOnGround);
         //run animation
         anim.SetFloat("speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+    }
+
+    //Hover functionality countdown the hover duration when hover is used
+    private IEnumerator HoverCoroutine(float countdownTime)
+    {
+        playerSO.canHover = false;
+        //stops player at the y position when hover is activated
+        playerRB.velocity = new Vector2(playerRB.velocity.x, 0);
+        //no gravity while hover is active
+        playerRB.gravityScale = 0;
+        yield return new WaitForSeconds(countdownTime);
+        //reset gravity when duration ends
+        playerRB.gravityScale = originalGravity;
+        
     }
 }
