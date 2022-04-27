@@ -7,6 +7,9 @@ public class EnemyDemonController : MonoBehaviour
     public EnemyData demonSO;
     public Animator anim;
     public Transform shotPoint;
+    public Transform pillarCheckPoint;
+    public LayerMask playerLayer;
+    public float pillarCheckRadius;
     public AnimationClip fireballClip;
     public Renderer enemyRenderer;
     
@@ -20,11 +23,28 @@ public class EnemyDemonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //shoot fireballs on a loop when the demon is on screen
-        if (demonSO.canShoot && enemyRenderer.isVisible)
+        //sets pillarActive based on if the player is in range or not;
+        demonSO.pillarActive = Physics2D.OverlapCircle(pillarCheckPoint.position, pillarCheckRadius,
+            playerLayer);
+
+        //fire pillar
+        if (demonSO.pillarActive)
         {
-            StartCoroutine(ShootFireballCoroutine(demonSO.timeBetweenFireballs));
+            StopCoroutine(ShootFireballCoroutine(demonSO.timeBetweenFireballs));
+            demonSO.canShoot = true;
+            anim.SetBool("pillarActive", demonSO.pillarActive);
         }
+        else
+        {
+            anim.SetBool("pillarActive", demonSO.pillarActive);
+            //shoot fireballs on a loop when the demon is on screen
+            if (demonSO.canShoot && enemyRenderer.isVisible)
+            {
+                StartCoroutine(ShootFireballCoroutine(demonSO.timeBetweenFireballs));
+            }  
+        }
+        
+        
     }
 
     //coroutine to shoot fireballs

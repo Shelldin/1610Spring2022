@@ -13,5 +13,7 @@ public class EnemyData : ScriptableObject
     public ProjectileController activeProjectile;
 
     
-    [HideInInspector] public bool canShoot;
+   // [HideInInspector]
+   public bool canShoot,
+         pillarActive;
 }
