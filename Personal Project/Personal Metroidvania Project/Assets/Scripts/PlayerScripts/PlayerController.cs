@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
 
     public Transform teleportPoint;
 
+    private bool isTeleporting = false;
+
     
     
     // Start is called before the first frame update
@@ -30,20 +32,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //teleport
         if (Input.GetButtonDown("Fire2"))
         {
-            playerSO.teleCountdown = playerSO.teleDuration;
             StartCoroutine(TeleportCoroutine(playerSO.teleDuration));
-            // gameObject.transform.position = teleportPoint.position;
         }
 
-        /*if (playerSO.teleCountdown > 0 && playerSO.teleportUnlocked)
-        {
-            playerSO.teleCountdown -= Time.deltaTime;
-            StartCoroutine(TeleportCoroutine(playerSO.teleDuration));
-
-        }*/
-        else
+        if (!isTeleporting)
         {
             //horizontal movement
             playerRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * playerSO.moveSpeed, playerRB.velocity.y);
@@ -119,6 +114,7 @@ public class PlayerController : MonoBehaviour
     //teleport functionality
     private IEnumerator TeleportCoroutine(float countdownTime)
     {
+        isTeleporting = true;
         //halt gravity and all momentum while teleporting
         playerRB.velocity = Vector2.zero;
         playerRB.gravityScale = 0;
@@ -144,6 +140,7 @@ public class PlayerController : MonoBehaviour
         //reappear animation and reset gravity
         anim.SetBool("isVisible", true);
         playerRB.gravityScale = originalGravity;
+        isTeleporting = false;
 
     }
 }
