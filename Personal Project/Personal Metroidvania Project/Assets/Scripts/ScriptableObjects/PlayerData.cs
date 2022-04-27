@@ -27,5 +27,6 @@ public class PlayerData : ScriptableObject
 
     public bool hoverUnlocked,
         teleportUnlocked;
+    
 
 }

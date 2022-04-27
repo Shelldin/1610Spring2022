@@ -23,4 +23,4 @@ MonoBehaviour:
   canTeleport: 1
   hoverDuration: 1
   hoverUnlocked: 1
-  teleportUnlocked: 1
+  teleportUnlocked: 0
