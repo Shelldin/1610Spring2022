@@ -14,6 +14,8 @@ public class PlayerData : ScriptableObject
     public float teleDuration = .2f;
 
     public float timeBetweenTeleports = .5f;
+
+    public float timeBetweenShots = .25f;
     
 
     public ProjectileController activeProjectile;
@@ -21,7 +23,8 @@ public class PlayerData : ScriptableObject
     [HideInInspector] 
     public bool isOnGround,
         canHover,
-        canTeleport;
+        canTeleport,
+        canShoot;
 
     public float hoverDuration;
 

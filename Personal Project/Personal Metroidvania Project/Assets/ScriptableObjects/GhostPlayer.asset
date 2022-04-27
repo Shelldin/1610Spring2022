@@ -17,10 +17,12 @@ MonoBehaviour:
   teleportSpeed: 1000
   teleDuration: 0.7
   timeBetweenTeleports: 0.5
+  timeBetweenShots: 0.4
   activeProjectile: {fileID: 1274879300878104507, guid: d8afe129fc3d4b64d8042c5a4d461dab, type: 3}
   isOnGround: 1
   canHover: 1
   canTeleport: 1
+  canShoot: 1
   hoverDuration: 1
   hoverUnlocked: 0
   teleportUnlocked: 0

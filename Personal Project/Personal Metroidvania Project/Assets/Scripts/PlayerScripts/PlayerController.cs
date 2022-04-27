@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     {
         originalGravity = playerRB.gravityScale;
         playerSO.canTeleport = true;
+        playerSO.canHover = true;
+        playerSO.canShoot = true;
     }
 
     // Update is called once per frame
@@ -87,10 +89,11 @@ public class PlayerController : MonoBehaviour
         }
 
         //shoot active projectile
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && playerSO.canShoot)
         {
             Instantiate(playerSO.activeProjectile, shotPoint.position, shotPoint.rotation).moveDir =
                 new Vector2(transform.localScale.x, 0);
+            StartCoroutine(ShootingCooldownCoroutine(playerSO.timeBetweenShots));
         }
         
         
@@ -148,6 +151,15 @@ public class PlayerController : MonoBehaviour
         //time delay so player can't spam teleports
         yield return new WaitForSeconds(playerSO.timeBetweenTeleports);
         playerSO.canTeleport = true;
+
+    }
+
+    //coroutine to determine player firing speed
+    private IEnumerator ShootingCooldownCoroutine(float timeBetweenShots)
+    {
+        playerSO.canShoot = false;
+        yield return new WaitForSeconds(timeBetweenShots);
+        playerSO.canShoot = true;
 
     }
 
