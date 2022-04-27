@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &163861978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163861979}
+  m_Layer: 11
+  m_Name: ShotPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163861979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163861978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.01, y: 0.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 431394065}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &419542378
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 431394065}
   - component: {fileID: 431394066}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DemonEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,9 +223,10 @@ Transform:
   m_GameObject: {fileID: 431394064}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 26, y: -4.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 2141071398}
+  - {fileID: 163861979}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -211,7 +242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5bf5020b676f114cbfeb8612d09857d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  demonSO: {fileID: 11400000, guid: 11e4e766a2143d841aa714212bf02a17, type: 2}
+  anim: {fileID: 2141071399}
+  shotPoint: {fileID: 163861979}
+  fireballClip: {fileID: 7400000, guid: 18537bbd5d7454043926a267c7e43d1a, type: 2}
+  enemyRenderer: {fileID: 2141071400}
 --- !u!1 &573267503
 GameObject:
   m_ObjectHideFlags: 0
@@ -17395,7 +17430,7 @@ GameObject:
   - component: {fileID: 2141071400}
   - component: {fileID: 2141071399}
   - component: {fileID: 2141071401}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DemonSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17411,7 +17446,7 @@ Transform:
   m_GameObject: {fileID: 2141071397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 431394065}
   m_RootOrder: 0
