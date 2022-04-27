@@ -13,13 +13,15 @@ public class PlayerData : ScriptableObject
 
     public float teleDuration = .2f;
 
-    [HideInInspector] public float teleCountdown;
+    public float timeBetweenTeleports = .5f;
+    
 
     public ProjectileController activeProjectile;
 
     [HideInInspector] 
     public bool isOnGround,
-        canHover;
+        canHover,
+        canTeleport;
 
     public float hoverDuration;
 
