@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private float originalGravity;
 
     public Transform teleportPoint;
+
     
     
     // Start is called before the first frame update
@@ -32,7 +33,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             playerSO.teleCountdown = playerSO.teleDuration;
-            gameObject.transform.position = teleportPoint.position;
+            StartCoroutine(TeleportCoroutine(playerSO.teleDuration));
+            // gameObject.transform.position = teleportPoint.position;
         }
 
         /*if (playerSO.teleCountdown > 0 && playerSO.teleportUnlocked)
@@ -114,13 +116,34 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    //teleport functionality
     private IEnumerator TeleportCoroutine(float countdownTime)
     {
+        //halt gravity and all momentum while teleporting
+        playerRB.velocity = Vector2.zero;
+        playerRB.gravityScale = 0;
+        //disappear animations
         anim.SetTrigger("disappear");
+        anim.SetBool("isVisible", false);
         yield return new WaitForSeconds(1f);
-        playerRB.velocity = new Vector2(playerSO.teleportSpeed * transform.localScale.x, playerRB.velocity.y);
+        //check if player will hit a collider on the ground layer
+        Debug.DrawRay(transform.position,transform.TransformDirection(transform.localScale.x, 0,0)*10f,Color.red, 3f);
+        RaycastHit2D teleHit = Physics2D.Raycast(transform.position,
+            transform.TransformDirection(transform.localScale.x, 0, 0),
+            Mathf.Abs(teleportPoint.position.x - transform.position.x), groundLayer);
+        //teleport to point of collision if player would collide or to teleport point if no collision occurs
+        if (teleHit)
+        {
+            transform.position = teleHit.point;
+        }
+        else
+        {
+            transform.position = teleportPoint.position;
+        }
         yield return new WaitForSeconds(.2f);
-        anim.SetTrigger("appear");
+        //reappear animation and reset gravity
+        anim.SetBool("isVisible", true);
+        playerRB.gravityScale = originalGravity;
 
     }
 }

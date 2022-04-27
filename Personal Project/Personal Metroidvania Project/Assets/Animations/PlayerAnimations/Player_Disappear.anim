@@ -30,7 +30,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.75
+        time: 0.6
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -39,7 +39,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.1666666
+        time: 1
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -70,9 +70,7 @@ AnimationClip:
       value: {fileID: -2445846010109057700, guid: 9ffaa69bb255d3b44b239b26b227fa1a, type: 3}
     - time: 0.5
       value: {fileID: 3195711470213510980, guid: 9ffaa69bb255d3b44b239b26b227fa1a, type: 3}
-    - time: 0.5833333
-      value: {fileID: 3195711470213510980, guid: 9ffaa69bb255d3b44b239b26b227fa1a, type: 3}
-    - time: 0.6666667
+    - time: 0.56666666
       value: {fileID: 3195711470213510980, guid: 9ffaa69bb255d3b44b239b26b227fa1a, type: 3}
     attribute: m_Sprite
     path: 
@@ -108,13 +106,12 @@ AnimationClip:
     - {fileID: -2445846010109057700, guid: 9ffaa69bb255d3b44b239b26b227fa1a, type: 3}
     - {fileID: 3195711470213510980, guid: 9ffaa69bb255d3b44b239b26b227fa1a, type: 3}
     - {fileID: 3195711470213510980, guid: 9ffaa69bb255d3b44b239b26b227fa1a, type: 3}
-    - {fileID: 3195711470213510980, guid: 9ffaa69bb255d3b44b239b26b227fa1a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1666666
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -143,7 +140,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.75
+        time: 0.6
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -152,7 +149,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.1666666
+        time: 1
         value: 0
         inSlope: Infinity
         outSlope: Infinity
