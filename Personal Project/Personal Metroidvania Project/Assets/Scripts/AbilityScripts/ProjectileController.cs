@@ -35,7 +35,6 @@ public class ProjectileController : MonoBehaviour
     {
         if (trig.CompareTag("Enemy"))
         {
-            Debug.Log("damage happening");
             trig.GetComponent<EnemyHealthController>().TakeDamage(shotSO.projectileDamage);
         }
         

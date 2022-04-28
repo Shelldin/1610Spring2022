@@ -12,11 +12,14 @@ public class EnemyDemonController : MonoBehaviour
     public float pillarCheckRadius;
     public AnimationClip fireballClip;
     public Renderer enemyRenderer;
+
+    private bool canShoot;
+    private bool pillarActive;
     
     // Start is called before the first frame update
     void Start()
     {
-        demonSO.canShoot = true;
+        canShoot = true;
           
     }
 
@@ -24,21 +27,21 @@ public class EnemyDemonController : MonoBehaviour
     void Update()
     {
         //sets pillarActive based on if the player is in range or not;
-        demonSO.pillarActive = Physics2D.OverlapCircle(pillarCheckPoint.position, pillarCheckRadius,
+        pillarActive = Physics2D.OverlapCircle(pillarCheckPoint.position, pillarCheckRadius,
             playerLayer);
 
         //fire pillar
-        if (demonSO.pillarActive)
+        if (pillarActive)
         {
             StopCoroutine(ShootFireballCoroutine(demonSO.timeBetweenFireballs));
-            demonSO.canShoot = true;
-            anim.SetBool("pillarActive", demonSO.pillarActive);
+            canShoot = true;
+            anim.SetBool("pillarActive", pillarActive);
         }
         else
         {
-            anim.SetBool("pillarActive", demonSO.pillarActive);
+            anim.SetBool("pillarActive", pillarActive);
             //shoot fireballs on a loop when the demon is on screen
-            if (demonSO.canShoot && enemyRenderer.isVisible)
+            if (canShoot && enemyRenderer.isVisible)
             {
                 StartCoroutine(ShootFireballCoroutine(demonSO.timeBetweenFireballs));
             }  
@@ -50,7 +53,7 @@ public class EnemyDemonController : MonoBehaviour
     //coroutine to shoot fireballs
     private IEnumerator ShootFireballCoroutine(float timeBetweenShots)
     {
-        demonSO.canShoot = false;
+        canShoot = false;
         anim.SetTrigger("fireballTrig");
         //instantiate the fireball prefab halfway through the shooting animation
         yield return new WaitForSeconds(fireballClip.length*.5f);
@@ -58,6 +61,6 @@ public class EnemyDemonController : MonoBehaviour
             new Vector2(transform.localScale.x, 0);
         //create delay between fireball shots
         yield return new WaitForSeconds(timeBetweenShots);
-        demonSO.canShoot = true;
+        canShoot = true;
     }
 }
