@@ -133,10 +133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf6128a040c85948aba192db41f7e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotSpeed: 15
+  shotSO: {fileID: 11400000, guid: 677eafa1dc3498f4d8b6d45790024bfb, type: 2}
   shotRB: {fileID: 9149211457860618719}
   moveDir: {x: 1, y: 0}
-  impactEffect: {fileID: 6365277866707378680, guid: 534320a0ba99d9c43b0cc2eef60345ac, type: 3}
 --- !u!50 &9149211457860618719
 Rigidbody2D:
   serializedVersion: 4

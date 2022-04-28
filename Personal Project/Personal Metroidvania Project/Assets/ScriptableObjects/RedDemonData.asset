@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b31b9e6938f81846b54f360ab077861, type: 3}
   m_Name: RedDemonData
   m_EditorClassIdentifier: 
-  health: 0
+  healthTotal: 5
   fireballDamage: 0
   firePillarDamage: 0
   timeBetweenFireballs: 1
   activeProjectile: {fileID: 459608475252800930, guid: 2899dd54a0d8c854497eb054a01f7a0b, type: 3}
-  canShoot: 1
+  canShoot: 0
   pillarActive: 0

@@ -154,7 +154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf6128a040c85948aba192db41f7e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotSpeed: 7
+  shotSO: {fileID: 11400000, guid: 83803fdb75e26f348b5bbd08d4d5f41a, type: 2}
   shotRB: {fileID: 7577618469061034950}
   moveDir: {x: -1, y: 0}
-  impactEffect: {fileID: 7211412598760466744, guid: 1129b7342e6f2244ab16ee224a1fa3a0, type: 3}

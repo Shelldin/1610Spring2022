@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "EnemyData")]
 public class EnemyData : ScriptableObject
 {
-    public float health;
+    public int healthTotal;
     public float fireballDamage;
     public float firePillarDamage;
 

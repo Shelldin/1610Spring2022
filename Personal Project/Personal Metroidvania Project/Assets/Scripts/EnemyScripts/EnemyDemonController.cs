@@ -17,7 +17,7 @@ public class EnemyDemonController : MonoBehaviour
     void Start()
     {
         demonSO.canShoot = true;
-        Debug.Log(fireballClip.length);   
+          
     }
 
     // Update is called once per frame

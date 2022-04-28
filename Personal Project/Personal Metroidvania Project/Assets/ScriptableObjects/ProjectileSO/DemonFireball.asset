@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ede4b5ef77fe29499436d5e7435106c, type: 3}
+  m_Name: DemonFireball
+  m_EditorClassIdentifier: 
+  projectileDamage: 1
+  shotSpeed: 6
+  impactEffect: {fileID: 7211412598760466744, guid: 1129b7342e6f2244ab16ee224a1fa3a0, type: 3}
