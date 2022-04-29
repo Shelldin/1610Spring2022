@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "PlayerData")]
 public class PlayerData : ScriptableObject
 {
+    public int maxHealth = 10,
+        currentHealth = 10;
+
     public float moveSpeed;
 
     public float jumpForce;
