@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -49,6 +50,8 @@ public class EnemyDemonController : MonoBehaviour
         
         
     }
+
+    
 
     //coroutine to shoot fireballs
     private IEnumerator ShootFireballCoroutine(float timeBetweenShots)

@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyData : ScriptableObject
 {
     public int healthTotal;
-    public float fireballDamage;
-    public float firePillarDamage;
+    public int fireballDamage;
+    public int firePillarDamage;
 
     public float timeBetweenFireballs = 3f;
 

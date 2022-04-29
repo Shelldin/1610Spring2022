@@ -37,6 +37,11 @@ public class ProjectileController : MonoBehaviour
         {
             trig.GetComponent<EnemyHealthController>().TakeDamage(shotSO.projectileDamage);
         }
+
+        if (trig.CompareTag("Player"))
+        {
+            trig.GetComponent<PlayerHealthController>().PlayerTakesDamage(shotSO.projectileDamage);
+        }
         
         if (shotSO.impactEffect != null)
         {

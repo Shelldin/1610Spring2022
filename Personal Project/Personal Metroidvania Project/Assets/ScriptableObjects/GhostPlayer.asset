@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 706c3e5d0d6405647b8c747897862d42, type: 3}
   m_Name: GhostPlayer
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 10
   moveSpeed: 8
   jumpForce: 20
   teleportSpeed: 1000
@@ -19,7 +21,7 @@ MonoBehaviour:
   timeBetweenTeleports: 0.5
   timeBetweenShots: 0.4
   activeProjectile: {fileID: 1274879300878104507, guid: d8afe129fc3d4b64d8042c5a4d461dab, type: 3}
-  isOnGround: 1
+  isOnGround: 0
   canHover: 1
   canTeleport: 1
   canShoot: 1

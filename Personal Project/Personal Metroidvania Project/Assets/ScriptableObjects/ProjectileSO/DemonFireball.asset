@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ede4b5ef77fe29499436d5e7435106c, type: 3}
   m_Name: DemonFireball
   m_EditorClassIdentifier: 
-  projectileDamage: 1
+  projectileDamage: 2
   shotSpeed: 6
   impactEffect: {fileID: 7211412598760466744, guid: 1129b7342e6f2244ab16ee224a1fa3a0, type: 3}

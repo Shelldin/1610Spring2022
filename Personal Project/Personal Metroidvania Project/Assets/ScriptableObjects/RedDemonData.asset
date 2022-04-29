@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthTotal: 5
   fireballDamage: 0
-  firePillarDamage: 0
+  firePillarDamage: 1
   timeBetweenFireballs: 1
   activeProjectile: {fileID: 459608475252800930, guid: 2899dd54a0d8c854497eb054a01f7a0b, type: 3}
-  canShoot: 0
-  pillarActive: 0
