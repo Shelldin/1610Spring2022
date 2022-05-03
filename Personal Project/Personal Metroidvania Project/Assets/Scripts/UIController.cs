@@ -1,11 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
+    public static UIController instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public Slider healthSlider;
+    public TMP_Text healthText;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +28,13 @@ public class UIController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    //Update Values for healthbar slider
+    public void UpdateHealthSlider(int currentHealth, int maxHealth)
+    {
+        healthSlider.maxValue = maxHealth;
+        healthSlider.value = currentHealth;
+        healthText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
     }
 }

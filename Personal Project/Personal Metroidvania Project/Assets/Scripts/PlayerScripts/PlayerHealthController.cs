@@ -6,38 +6,90 @@ using UnityEngine;
 public class PlayerHealthController : MonoBehaviour
 {
     public PlayerData playerSO;
-    
 
-    public void Start()
+    public float iFrameLength;
+    private float iFrameCounter;
+
+    public float flashLength;
+    private float flashCounter;
+
+    public SpriteRenderer playerSprite;
+    private bool colorIsWhite;
+
+
+    
+    private void Start()
     {
         
+        playerSO.currentHealth = playerSO.maxHealth;
+        
+        //update healthbar UI on start
+        UIController.instance.UpdateHealthSlider(playerSO.currentHealth, playerSO.maxHealth);
     }
 
-    public void Update()
+    private void Update()
     {
+        //countdown for iframe duration
+        if (iFrameCounter > 0)
+        {
+            iFrameCounter -= Time.deltaTime;
+
+            flashCounter -= Time.deltaTime;
+            if (flashCounter <=0)
+            {
+                if (playerSprite.color == Color.white)
+                {
+                    playerSprite.color = Color.green;
+                }
+                else
+                {
+                    playerSprite.color = Color.white;
+                }
+                flashCounter = flashLength;
+            }
+
+            if (iFrameCounter <= 0)
+            {
+                playerSprite.color = Color.white;
+                flashCounter = 0;
+            }
+        }
         
     }
 
     //deal damage to player
     public void PlayerTakesDamage(int damageAmount)
     {
-        playerSO.currentHealth -= damageAmount;
-
-        //what happens when player dies
-        if (playerSO.currentHealth <= 0)
+        //damage only happens when not in iFrames
+        if (iFrameCounter <= 0)
         {
-            //prevent player health from reaching below 0
-            playerSO.currentHealth = 0;
+            playerSO.currentHealth -= damageAmount;
 
-            if (transform.parent != null)
+            //what happens when player dies
+            if (playerSO.currentHealth <= 0)
             {
-                transform.parent.gameObject.SetActive(false);
+                //prevent player health from reaching below 0
+                playerSO.currentHealth = 0;
+
+                if (transform.parent != null)
+                {
+                    transform.parent.gameObject.SetActive(false);
+                }
+                else
+                {
+                    gameObject.SetActive(false);
+                }
             }
             else
             {
-                gameObject.SetActive(false);
+                //reset iFrames
+                iFrameCounter = iFrameLength;
             }
-            
+
+            //update health bar after taking damage
+            UIController.instance.UpdateHealthSlider(playerSO.currentHealth, playerSO.maxHealth);
         }
     }
+
+    
 }

@@ -19,6 +19,8 @@ public class PlayerData : ScriptableObject
     public float timeBetweenTeleports = .5f;
 
     public float timeBetweenShots = .25f;
+
+    
     
 
     public ProjectileController activeProjectile;
@@ -33,6 +35,7 @@ public class PlayerData : ScriptableObject
 
     public bool hoverUnlocked,
         teleportUnlocked;
+    
     
 
 }
