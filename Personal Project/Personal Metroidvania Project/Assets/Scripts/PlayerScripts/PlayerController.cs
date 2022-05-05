@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
         playerSO.canTeleport = true;
         playerSO.canHover = true;
         playerSO.canShoot = true;
+
+        playerSO.respawnPoint = gameObject.transform.position;
     }
 
     // Update is called once per frame

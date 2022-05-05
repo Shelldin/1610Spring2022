@@ -16,6 +16,8 @@ public class PlayerHealthController : MonoBehaviour
     public SpriteRenderer playerSprite;
     private bool colorIsWhite;
 
+    public RespawnController respawnController;
+
 
     
     private void Start()
@@ -25,6 +27,8 @@ public class PlayerHealthController : MonoBehaviour
         
         //update healthbar UI on start
         UIController.instance.UpdateHealthSlider(playerSO.currentHealth, playerSO.maxHealth);
+
+        respawnController = FindObjectOfType<RespawnController>();
     }
 
     private void Update()
@@ -73,11 +77,13 @@ public class PlayerHealthController : MonoBehaviour
 
                 if (transform.parent != null)
                 {
-                    transform.parent.gameObject.SetActive(false);
+                    //transform.parent.gameObject.SetActive(false);
+                    respawnController.Respawn();
                 }
                 else
                 {
-                    gameObject.SetActive(false);
+                    //gameObject.SetActive(false);
+                    respawnController.Respawn();
                 }
             }
             else

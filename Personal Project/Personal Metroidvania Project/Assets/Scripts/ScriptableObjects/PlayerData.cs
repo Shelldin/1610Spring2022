@@ -20,6 +20,8 @@ public class PlayerData : ScriptableObject
 
     public float timeBetweenShots = .25f;
 
+    public Vector3 respawnPoint;
+
     
     
 
@@ -35,7 +37,12 @@ public class PlayerData : ScriptableObject
 
     public bool hoverUnlocked,
         teleportUnlocked;
-    
-    
+
+    public void RefillHealth()
+    {
+        currentHealth = maxHealth;
+    }
+
+
 
 }
