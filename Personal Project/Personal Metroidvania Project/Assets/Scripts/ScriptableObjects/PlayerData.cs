@@ -43,6 +43,11 @@ public class PlayerData : ScriptableObject
         currentHealth = maxHealth;
     }
 
+    public void SetRespawnPoint(Vector3 newRespawnPoint)
+    {
+        respawnPoint = newRespawnPoint;
+    }
+
 
 
 }
