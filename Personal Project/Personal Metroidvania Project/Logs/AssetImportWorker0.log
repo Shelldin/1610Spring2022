@@ -15,11 +15,11 @@ C:/Users/sheld/Documents/CodingStuff/1610Spring2022/Personal Project/Personal Me
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51364
+62577
 Successfully changed project path to: C:/Users/sheld/Documents/CodingStuff/1610Spring2022/Personal Project/Personal Metroidvania Project
 C:/Users/sheld/Documents/CodingStuff/1610Spring2022/Personal Project/Personal Metroidvania Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 106.35 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 88.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -35,343 +35,90 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002096 seconds.
+Registered in 0.001443 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 86.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 75.00 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.109 seconds
+- Completed reload, in  0.826 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1109ms)
-		BeginReloadAssembly (127ms)
+	ReloadAssembly (826ms)
+		BeginReloadAssembly (81ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (852ms)
-			LoadAssemblies (124ms)
+		EndReloadAssembly (655ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (340ms)
+			SetupTypeCache (185ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (290ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (279ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (86ms)
-				BeforeProcessingInitializeOnLoad (20ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (19ms)
 				ProcessInitializeOnLoadAttributes (133ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003890 seconds.
+Registered in 0.004770 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Personal Project\Personal Metroidvania Project\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 71.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 69.64 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.653 seconds
+- Completed reload, in  1.524 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1655ms)
-		BeginReloadAssembly (250ms)
+	ReloadAssembly (1525ms)
+		BeginReloadAssembly (194ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (23ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (1317ms)
-			LoadAssemblies (145ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1248ms)
+			LoadAssemblies (129ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (412ms)
+			SetupTypeCache (354ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (522ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (540ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (72ms)
-				BeforeProcessingInitializeOnLoad (110ms)
-				ProcessInitializeOnLoadAttributes (302ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2229 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 100.7 MB.
-System memory in use after: 100.6 MB.
-
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2663.
-Total: 5.482500 ms (FindLiveObjects: 0.258600 ms CreateObjectMapping: 0.123300 ms MarkObjects: 4.882000 ms  DeleteObjects: 0.216700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/AnimuzAssets/gothicvania church files
-  artifactKey: Guid(f94351b60640d374db23750f95754a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania church files using Guid(f94351b60640d374db23750f95754a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23952aea7396fcdfcb5b68f0e6cbaf02') in 0.018357 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 58.912343 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-1.png
-  artifactKey: Guid(1e36a8ced28c8af48881cee925312243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-1.png using Guid(1e36a8ced28c8af48881cee925312243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a77e07d240503f473f4340759e2b4a9') in 0.197337 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.363435 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-1.png
-  artifactKey: Guid(1e36a8ced28c8af48881cee925312243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-1.png using Guid(1e36a8ced28c8af48881cee925312243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7373749a369a54135fffe8bd09d19c') in 0.040469 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.202295 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-1.png
-  artifactKey: Guid(1e36a8ced28c8af48881cee925312243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-1.png using Guid(1e36a8ced28c8af48881cee925312243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1168ea3f869f7c08801430d2db57ca4') in 0.029560 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.195663 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-2.png
-  artifactKey: Guid(5de4dd7944a81a04d98b29c48594a7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-2.png using Guid(5de4dd7944a81a04d98b29c48594a7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0275f28f04000847c19eb58eb861229') in 0.040992 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.633342 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-2.png
-  artifactKey: Guid(5de4dd7944a81a04d98b29c48594a7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-2.png using Guid(5de4dd7944a81a04d98b29c48594a7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6af95f7174c7413be4cba49d4abcae') in 0.028532 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.582953 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-3.png
-  artifactKey: Guid(f9f1df3179b75344c957ff855e10274e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-3.png using Guid(f9f1df3179b75344c957ff855e10274e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5d5eb34fcac1348b988af88170e350') in 0.026377 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.318200 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-3.png
-  artifactKey: Guid(f9f1df3179b75344c957ff855e10274e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-3.png using Guid(f9f1df3179b75344c957ff855e10274e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627784ecea9f857c97e5eab8f740b978') in 0.034131 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.613588 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-4.png
-  artifactKey: Guid(10230e4381db9c548a3372b259d81314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-4.png using Guid(10230e4381db9c548a3372b259d81314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e216f81cff9cefadade74d53dcbe414') in 0.019241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.097557 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-4.png
-  artifactKey: Guid(10230e4381db9c548a3372b259d81314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-4.png using Guid(10230e4381db9c548a3372b259d81314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd67570b4e3e31e3ea0a146a7050e331') in 0.028656 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 73.045887 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-1.png
-  artifactKey: Guid(1e36a8ced28c8af48881cee925312243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-1.png using Guid(1e36a8ced28c8af48881cee925312243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918fd67b8b279f8a886656928be7230d') in 0.025508 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.002908 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-2.png
-  artifactKey: Guid(5de4dd7944a81a04d98b29c48594a7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-2.png using Guid(5de4dd7944a81a04d98b29c48594a7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ffc137d4aecdab42aef2758c91d7fa2') in 0.018453 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.369112 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-3.png
-  artifactKey: Guid(f9f1df3179b75344c957ff855e10274e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-3.png using Guid(f9f1df3179b75344c957ff855e10274e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7f2a61860e8a3932f90423128ab44c') in 0.065560 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.116630 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-4.png
-  artifactKey: Guid(10230e4381db9c548a3372b259d81314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost/ghost-4.png using Guid(10230e4381db9c548a3372b259d81314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8afe18d34220bc1f480d2c521e6ead30') in 0.018450 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 46.949156 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-1.png
-  artifactKey: Guid(70f8b309f00b4274097a3954ece73518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-1.png using Guid(70f8b309f00b4274097a3954ece73518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8c24685160ceb6795dc9742ba23526') in 0.032401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.195238 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-1.png
-  artifactKey: Guid(70f8b309f00b4274097a3954ece73518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-1.png using Guid(70f8b309f00b4274097a3954ece73518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3530f261b81c5750a6163308897141b') in 0.029865 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.613756 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-2.png
-  artifactKey: Guid(8907b0e8a7ce1244e8f37a87da53e444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-2.png using Guid(8907b0e8a7ce1244e8f37a87da53e444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6698f84ff5610093bacb884737697ee7') in 0.094084 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.708511 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-2.png
-  artifactKey: Guid(8907b0e8a7ce1244e8f37a87da53e444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-2.png using Guid(8907b0e8a7ce1244e8f37a87da53e444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24da4f7e34456df335da7cf337d6901a') in 0.038641 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.675513 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-3.png
-  artifactKey: Guid(860798981f9dd59429f7210780e3312b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-3.png using Guid(860798981f9dd59429f7210780e3312b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4571bd11b3622c12ee3b991d63749842') in 0.040591 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.391242 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-3.png
-  artifactKey: Guid(860798981f9dd59429f7210780e3312b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-3.png using Guid(860798981f9dd59429f7210780e3312b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f11ff50c8c38470b3e17570e668f84b') in 0.023422 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.455705 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-4.png
-  artifactKey: Guid(11199fc9282829947a0a198b9567999e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-4.png using Guid(11199fc9282829947a0a198b9567999e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f785cdf8aa1becc4df94203dc7a49a87') in 0.030343 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.116183 seconds.
-  path: Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-4.png
-  artifactKey: Guid(11199fc9282829947a0a198b9567999e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/ghost-halo-4.png using Guid(11199fc9282829947a0a198b9567999e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df568866b72036dd1bbbb048e8616604') in 0.030627 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10422.604183 seconds.
-  path: Assets/Scripts/CheckPointController.cs
-  artifactKey: Guid(8177972305f3e9e448b0b99975a793b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CheckPointController.cs using Guid(8177972305f3e9e448b0b99975a793b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8230de8712786611e0b6522b0ad33ad') in 0.047254 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006353 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Personal Project\Personal Metroidvania Project\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.594 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1596ms)
-		BeginReloadAssembly (252ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (18ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (106ms)
-		EndReloadAssembly (1247ms)
-			LoadAssemblies (163ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (463ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (418ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (134ms)
-				ProcessInitializeOnLoadAttributes (251ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (70ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (305ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2212 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.3 MB.
-System memory in use after: 102.3 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2685.
-Total: 3.522300 ms (FindLiveObjects: 0.162700 ms CreateObjectMapping: 0.069200 ms MarkObjects: 3.028000 ms  DeleteObjects: 0.260700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006128 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Personal Project\Personal Metroidvania Project\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.496 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3498ms)
-		BeginReloadAssembly (365ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (23ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (118ms)
-		EndReloadAssembly (2922ms)
-			LoadAssemblies (319ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1035ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (139ms)
-			SetupLoadedEditorAssemblies (1097ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (330ms)
-				ProcessInitializeOnLoadAttributes (696ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (30ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2212 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.4 MB.
-System memory in use after: 102.3 MB.
+Unloading 2230 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.7 MB.
+System memory in use after: 100.6 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2688.
-Total: 10.393700 ms (FindLiveObjects: 0.462100 ms CreateObjectMapping: 0.414400 ms MarkObjects: 9.140100 ms  DeleteObjects: 0.374500 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2664.
+Total: 4.339800 ms (FindLiveObjects: 0.707200 ms CreateObjectMapping: 0.345300 ms MarkObjects: 3.102600 ms  DeleteObjects: 0.171900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -386,56 +133,113 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 276.977052 seconds.
-  path: Assets/Scripts/CheckPointController.cs
-  artifactKey: Guid(8177972305f3e9e448b0b99975a793b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CheckPointController.cs using Guid(8177972305f3e9e448b0b99975a793b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2238df977444fbec2c95048e63f796') in 0.026688 seconds 
+  path: Assets/Prefabs/Effects/PlayerDeathEffect.prefab
+  artifactKey: Guid(abf0fa83f8668dc41aeb63a0465e59e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Effects/PlayerDeathEffect.prefab using Guid(abf0fa83f8668dc41aeb63a0465e59e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084a3c579d2417c510b4e15ce7cf5517') in 0.208066 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007768 seconds.
+Registered in 0.004227 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Personal Project\Personal Metroidvania Project\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.766 seconds
+- Completed reload, in  1.856 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3768ms)
-		BeginReloadAssembly (361ms)
+	ReloadAssembly (1857ms)
+		BeginReloadAssembly (212ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (21ms)
+			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (112ms)
-		EndReloadAssembly (3159ms)
-			LoadAssemblies (340ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (1496ms)
+			LoadAssemblies (205ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1012ms)
+			SetupTypeCache (504ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (151ms)
-			SetupLoadedEditorAssemblies (1288ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (555ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (357ms)
-				ProcessInitializeOnLoadAttributes (852ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (1ms)
+				BeforeProcessingInitializeOnLoad (161ms)
+				ProcessInitializeOnLoadAttributes (349ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (34ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2212 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.3 MB.
+System memory in use after: 102.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2674.
+Total: 6.176500 ms (FindLiveObjects: 0.270500 ms CreateObjectMapping: 0.179500 ms MarkObjects: 5.501700 ms  DeleteObjects: 0.222200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007620 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Personal Project\Personal Metroidvania Project\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.985 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1985ms)
+		BeginReloadAssembly (261ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (82ms)
+		EndReloadAssembly (1593ms)
+			LoadAssemblies (219ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (510ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (638ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (220ms)
+				ProcessInitializeOnLoadAttributes (379ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2212 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 102.4 MB.
-System memory in use after: 102.4 MB.
+System memory in use after: 102.3 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2691.
-Total: 8.131300 ms (FindLiveObjects: 0.254000 ms CreateObjectMapping: 0.354000 ms MarkObjects: 7.243600 ms  DeleteObjects: 0.277000 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2677.
+Total: 6.398500 ms (FindLiveObjects: 0.284000 ms CreateObjectMapping: 0.213700 ms MarkObjects: 5.661100 ms  DeleteObjects: 0.237300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -450,66 +254,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 78.834568 seconds.
-  path: Assets/Scripts/CheckPointController.cs
-  artifactKey: Guid(8177972305f3e9e448b0b99975a793b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CheckPointController.cs using Guid(8177972305f3e9e448b0b99975a793b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2ddb30f3201a6478dee37c3bf931db') in 0.019706 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004837 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Personal Project\Personal Metroidvania Project\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.601 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3603ms)
-		BeginReloadAssembly (367ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (25ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (114ms)
-		EndReloadAssembly (3002ms)
-			LoadAssemblies (300ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1005ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (166ms)
-			SetupLoadedEditorAssemblies (1143ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (356ms)
-				ProcessInitializeOnLoadAttributes (710ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2212 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.4 MB.
-System memory in use after: 102.4 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2694.
-Total: 4.014800 ms (FindLiveObjects: 0.277500 ms CreateObjectMapping: 0.185600 ms MarkObjects: 3.305300 ms  DeleteObjects: 0.244700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 302.987514 seconds.
+  path: Assets/ScriptableObjects/GhostPlayer.asset
+  artifactKey: Guid(dbaa637b688f80e4bb26bb5f326163c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/GhostPlayer.asset using Guid(dbaa637b688f80e4bb26bb5f326163c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4666c119ab507412bd5c89fd04eb9ae7') in 0.047212 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

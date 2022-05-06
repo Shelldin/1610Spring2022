@@ -20,6 +20,8 @@ MonoBehaviour:
   teleDuration: 0.7
   timeBetweenTeleports: 0.5
   timeBetweenShots: 0.4
+  respawnPoint: {x: -12.2, y: -5.7, z: 0}
+  deathEffect: {fileID: 650597453824679235, guid: abf0fa83f8668dc41aeb63a0465e59e1, type: 3}
   activeProjectile: {fileID: 1274879300878104507, guid: d8afe129fc3d4b64d8042c5a4d461dab, type: 3}
   isOnGround: 1
   canHover: 1

@@ -22,6 +22,8 @@ public class PlayerData : ScriptableObject
 
     public Vector3 respawnPoint;
 
+    public GameObject deathEffect;
+
     
     
 
