@@ -25,6 +25,12 @@ public class UIController : MonoBehaviour
 
     public Slider healthSlider;
     public TMP_Text healthText;
+
+    public Image fadeScreen;
+    public float fadeSpeed = 2f;
+
+    private bool startingFade,
+        endingFade;
     
     
     // Start is called before the first frame update
@@ -36,7 +42,24 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (startingFade)
+        {
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b,
+                Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+            if (fadeScreen.color.a == 1f)
+            {
+                startingFade = false;
+            }
+        }
+        else if (endingFade)
+        {
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b,
+                Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+            if (fadeScreen.color.a == 0f)
+            {
+                endingFade = false;
+            }
+        }
     }
 
     //Update Values for healthbar slider
@@ -45,5 +68,17 @@ public class UIController : MonoBehaviour
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
         healthText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
+    }
+
+    public void StartFade()
+    {
+        startingFade = true;
+        endingFade = false;
+    }
+
+    public void EndFade()
+    {
+        startingFade = false;
+        endingFade = true;
     }
 }

@@ -31,78 +31,90 @@ public class PlayerController : MonoBehaviour
         playerSO.canHover = true;
         playerSO.canShoot = true;
 
+        StartCoroutine(LevelEntranceCoroutine());
+
         playerSO.respawnPoint = gameObject.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //teleport if player hasn't hovered and teleport is unlocked
-        if (Input.GetButtonDown("Fire2") && playerSO.canHover && playerSO.teleportUnlocked && playerSO.canTeleport)
+        if (playerSO.canMove)
         {
-            StartCoroutine(TeleportCoroutine(playerSO.teleDuration));
-        }
-  
-        
-        
-        if (!isTeleporting)
-        {
-            //horizontal movement
-            playerRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * playerSO.moveSpeed, playerRB.velocity.y);
 
-            //flip direction based on horizontal input
-            if (Input.GetAxisRaw("Horizontal") < 0)
+            //teleport if player hasn't hovered and teleport is unlocked
+            if (Input.GetButtonDown("Fire2") && playerSO.canHover && playerSO.teleportUnlocked && playerSO.canTeleport)
             {
-                transform.localScale = new Vector3(-1f, 1f, 1f);
-            }
-            else if (Input.GetAxisRaw("Horizontal") > 0)
-            {
-                transform.localScale = new Vector3(1f, 1f, 1f);
+                StartCoroutine(TeleportCoroutine(playerSO.teleDuration));
             }
 
 
-            //checking if on ground
-            playerSO.isOnGround = Physics2D.OverlapCircle(groundPoint.position, .3f, groundLayer);
 
-            //jumping
-            if (Input.GetButtonDown("Jump") && playerSO.isOnGround)
+            if (!isTeleporting)
             {
-                playerRB.velocity = new Vector2(playerRB.velocity.x, playerSO.jumpForce);
+                //horizontal movement
+                playerRB.velocity =
+                    new Vector2(Input.GetAxisRaw("Horizontal") * playerSO.moveSpeed, playerRB.velocity.y);
 
-            }
-
-            //check if player has unlocked the hover upgrade
-            if (playerSO.hoverUnlocked)
-            {
-                //hover for a limited time while the jump button is held while already in the air
-                if (Input.GetButtonDown("Jump") && !playerSO.isOnGround && playerSO.canHover)
+                //flip direction based on horizontal input
+                if (Input.GetAxisRaw("Horizontal") < 0)
                 {
+                    transform.localScale = new Vector3(-1f, 1f, 1f);
+                }
+                else if (Input.GetAxisRaw("Horizontal") > 0)
+                {
+                    transform.localScale = new Vector3(1f, 1f, 1f);
+                }
 
-                    StartCoroutine(HoverCoroutine(playerSO.hoverDuration));
+
+                //checking if on ground
+                playerSO.isOnGround = Physics2D.OverlapCircle(groundPoint.position, .3f, groundLayer);
+
+                //jumping
+                if (Input.GetButtonDown("Jump") && playerSO.isOnGround)
+                {
+                    playerRB.velocity = new Vector2(playerRB.velocity.x, playerSO.jumpForce);
 
                 }
+
+                //check if player has unlocked the hover upgrade
+                if (playerSO.hoverUnlocked)
+                {
+                    //hover for a limited time while the jump button is held while already in the air
+                    if (Input.GetButtonDown("Jump") && !playerSO.isOnGround && playerSO.canHover)
+                    {
+
+                        StartCoroutine(HoverCoroutine(playerSO.hoverDuration));
+
+                    }
+                }
+            }
+
+            //resetting hover when grounded
+            if (playerSO.isOnGround)
+            {
+                playerSO.canHover = true;
+            }
+
+            //shoot active projectile
+            if (Input.GetButtonDown("Fire1") && playerSO.canShoot)
+            {
+                Instantiate(playerSO.activeProjectile, shotPoint.position, shotPoint.rotation).moveDir =
+                    new Vector2(transform.localScale.x, 0);
+                StartCoroutine(ShootingCooldownCoroutine(playerSO.timeBetweenShots));
             }
         }
-
-        //resetting hover when grounded
-        if (playerSO.isOnGround)
+        else
         {
-            playerSO.canHover = true;
+            playerRB.velocity = Vector2.zero;
         }
 
-        //shoot active projectile
-        if (Input.GetButtonDown("Fire1") && playerSO.canShoot)
-        {
-            Instantiate(playerSO.activeProjectile, shotPoint.position, shotPoint.rotation).moveDir =
-                new Vector2(transform.localScale.x, 0);
-            StartCoroutine(ShootingCooldownCoroutine(playerSO.timeBetweenShots));
-        }
-        
-        
+
         //jump animation
         anim.SetBool("isOnGround", playerSO.isOnGround);
         //run animation
         anim.SetFloat("speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+        
     }
 
     //Hover functionality countdown the hover duration when hover is used
@@ -163,6 +175,12 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(timeBetweenShots);
         playerSO.canShoot = true;
 
+    }
+
+    private IEnumerator LevelEntranceCoroutine()
+    {
+        yield return new WaitForSeconds(2f);
+        playerSO.canMove = true;
     }
 
     

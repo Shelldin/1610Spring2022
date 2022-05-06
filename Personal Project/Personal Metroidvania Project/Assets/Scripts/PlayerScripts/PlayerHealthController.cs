@@ -78,11 +78,19 @@ public class PlayerHealthController : MonoBehaviour
                 if (transform.parent != null)
                 {
                     //transform.parent.gameObject.SetActive(false);
+                    if (playerSO.deathEffect != null)
+                    {
+                        Instantiate(playerSO.deathEffect, transform.position, transform.rotation);
+                    }
                     respawnController.Respawn();
                 }
                 else
                 {
                     //gameObject.SetActive(false);
+                    if (playerSO.deathEffect != null)
+                    {
+                        Instantiate(playerSO.deathEffect, transform.position, transform.rotation);
+                    }
                     respawnController.Respawn();
                 }
             }

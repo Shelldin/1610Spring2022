@@ -33,7 +33,8 @@ public class PlayerData : ScriptableObject
     public bool isOnGround,
         canHover,
         canTeleport,
-        canShoot;
+        canShoot,
+        canMove;
 
     public float hoverDuration;
 

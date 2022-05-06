@@ -32,10 +32,7 @@ public class RespawnController : MonoBehaviour
         
         playerObj.SetActive(false);
 
-        if (playerSO.deathEffect != null)
-        {
-            Instantiate(playerSO.deathEffect, transform.position, transform.rotation);
-        }
+        
         yield return new WaitForSeconds(waitToRespawn);
 
         playerObj.transform.position = playerSO.respawnPoint;
