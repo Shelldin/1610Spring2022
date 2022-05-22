@@ -15,11 +15,11 @@ C:/Users/sheld/Documents/CodingStuff/1610Spring2022/Personal Project/Personal Me
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61152
+49708
 Successfully changed project path to: C:/Users/sheld/Documents/CodingStuff/1610Spring2022/Personal Project/Personal Metroidvania Project
 C:/Users/sheld/Documents/CodingStuff/1610Spring2022/Personal Project/Personal Metroidvania Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 68.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 78.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -35,90 +35,90 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001482 seconds.
+Registered in 0.001244 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 83.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 62.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.944 seconds
+- Completed reload, in  0.694 seconds
 Domain Reload Profiling:
-	ReloadAssembly (944ms)
-		BeginReloadAssembly (176ms)
+	ReloadAssembly (695ms)
+		BeginReloadAssembly (79ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (675ms)
-			LoadAssemblies (171ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (515ms)
+			LoadAssemblies (77ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (264ms)
+			SetupTypeCache (127ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (254ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (234ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (84ms)
-				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (112ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				RefreshPlugins (63ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004722 seconds.
+Registered in 0.004800 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\sheld\Documents\CodingStuff\1610Spring2022\Personal Project\Personal Metroidvania Project\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 93.90 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 54.06 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.964 seconds
+- Completed reload, in  1.305 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1966ms)
-		BeginReloadAssembly (299ms)
+	ReloadAssembly (1307ms)
+		BeginReloadAssembly (205ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1560ms)
-			LoadAssemblies (178ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1050ms)
+			LoadAssemblies (133ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (577ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (535ms)
+			SetupTypeCache (295ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (448ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (94ms)
-				BeforeProcessingInitializeOnLoad (142ms)
-				ProcessInitializeOnLoadAttributes (267ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (54ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (253ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2231 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 100.8 MB.
 System memory in use after: 100.7 MB.
 
 Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2665.
-Total: 3.789500 ms (FindLiveObjects: 0.236400 ms CreateObjectMapping: 0.117100 ms MarkObjects: 3.196100 ms  DeleteObjects: 0.238500 ms)
+Total: 3.630400 ms (FindLiveObjects: 0.152300 ms CreateObjectMapping: 0.081700 ms MarkObjects: 3.180300 ms  DeleteObjects: 0.215000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -133,49 +133,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Boss1.unity
-  artifactKey: Guid(eda44d7427093fb47836fe4d75b771fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Boss1.unity using Guid(eda44d7427093fb47836fe4d75b771fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08a86d799e0730d07821bee0eb458722') in 0.028523 seconds 
+  path: Assets/Animations/EnemyAnimations/Boss_Breath_Attack.anim
+  artifactKey: Guid(d4be065d4c662b34eba0b618f211e11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/EnemyAnimations/Boss_Breath_Attack.anim using Guid(d4be065d4c662b34eba0b618f211e11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9194a3779208bfdb890564cca56a22') in 0.061084 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 62.277073 seconds.
-  path: Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-idle.png
-  artifactKey: Guid(3054c2dadf2832d458211b8b52c0a268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-idle.png using Guid(3054c2dadf2832d458211b8b52c0a268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0a2cb6aff0cfe7d4e32d86b4442ff2') in 0.164158 seconds 
+  Time since last request: 0.000355 seconds.
+  path: Assets/Animations/EnemyAnimations
+  artifactKey: Guid(eef8cc2767455954d88877ed4b6b146c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/EnemyAnimations using Guid(eef8cc2767455954d88877ed4b6b146c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7b8f4f109b4ecf4c6841926e65c50f') in 0.010776 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 23.885133 seconds.
-  path: Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-idle.png
-  artifactKey: Guid(3054c2dadf2832d458211b8b52c0a268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-idle.png using Guid(3054c2dadf2832d458211b8b52c0a268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c15c5675a312acd0961b89f6e2f094') in 0.172485 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 313.866524 seconds.
-  path: Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-attack.png
-  artifactKey: Guid(534c6168db23d0e4cad22e2d70e5a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-attack.png using Guid(534c6168db23d0e4cad22e2d70e5a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e1f2c61462b0d869326809fc23b2e1') in 0.048130 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.273985 seconds.
-  path: Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-attack.png
-  artifactKey: Guid(534c6168db23d0e4cad22e2d70e5a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-attack.png using Guid(534c6168db23d0e4cad22e2d70e5a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b440bb130eb703986b8de9ce2591be6') in 0.166103 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 167.656837 seconds.
-  path: Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-attack.png
-  artifactKey: Guid(534c6168db23d0e4cad22e2d70e5a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-attack.png using Guid(534c6168db23d0e4cad22e2d70e5a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c950ebfdb011cb7bbc5a543e5544542') in 0.109772 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 54.512928 seconds.
-  path: Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-attack.png
-  artifactKey: Guid(534c6168db23d0e4cad22e2d70e5a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-attack.png using Guid(534c6168db23d0e4cad22e2d70e5a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6aadb26b541bc3709207d7816166849') in 0.103781 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.503300 seconds.
-  path: Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-attack.png
-  artifactKey: Guid(534c6168db23d0e4cad22e2d70e5a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AnimuzAssets/gothicvania patreon collection/demon-Files/PNG/demon-attack.png using Guid(534c6168db23d0e4cad22e2d70e5a931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2436a1e748fedbfd1d95849af52cfaae') in 0.111060 seconds 
+  Time since last request: 424.920450 seconds.
+  path: Assets/Animations/EnemyAnimations/Sprite.controller
+  artifactKey: Guid(fd71e2f6d74518a4b9addd114ed5b88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/EnemyAnimations/Sprite.controller using Guid(fd71e2f6d74518a4b9addd114ed5b88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4567752824caa3f5cdf99d5bb04dd4f') in 0.016435 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
